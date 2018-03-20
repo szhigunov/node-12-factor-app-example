@@ -15,3 +15,5 @@ MongoClient.connect(`mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${p
         console.log('connected to mongodb')
     }
 });
+
+const app = require('./server.js')(process.env.APP_PORT);
